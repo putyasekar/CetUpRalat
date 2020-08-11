@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.IsiChatActivity"></activity>
+        <activity android:name=".activity.VisitProfileActivity"></activity>
+        <activity android:name=".activity.IsiChatActivity" />
         <activity android:name=".activity.FullViewImageActivity" />
         <activity android:name=".activity.EditProfileActivity" />
         <activity android:name=".activity.WelcomeActivity">

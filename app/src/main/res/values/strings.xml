@@ -79,4 +79,6 @@
     <string name="help">Help</string>
     <string name="helpers">FAQ,Contact us Privacy policy</string>
     <string name="delete">Delete Account</string>
+    <string name="image_send">Send Image</string>
+    <string name="no_message">No Message Available</string>
 </resources>
