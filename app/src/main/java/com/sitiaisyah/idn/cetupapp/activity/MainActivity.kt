@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                 supportFragmentManager
             )
         viewPagerAdapter.addFragment(ChatFragment(), "chats")
-        viewPagerAdapter.addFragment(CallFragment(), "search")
+        viewPagerAdapter.addFragment(CallFragment(), "call")
         viewPagerAdapter.addFragment(SettingFragment(), "setting")
 
         viewPager.adapter = viewPagerAdapter

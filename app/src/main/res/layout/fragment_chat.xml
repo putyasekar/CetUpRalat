@@ -1,17 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".fragment.ChatFragment">
+    android:background="#F8F8F8">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_chat_list"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+    <ImageView
+        android:id="@+id/tv_background_img"
+        android:layout_width="58dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_15dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_image" />
+
+    <ImageView
+        android:id="@+id/iv_profile_chat"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background_img"
+        app:layout_constraintEnd_toEndOf="@+id/tv_background_img"
+        app:layout_constraintStart_toStartOf="@+id/tv_background_img"
+        app:layout_constraintTop_toTopOf="@+id/tv_background_img"
+        app:srcCompat="@drawable/profil" />
+
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/text_chat_fragment"/>
+        android:id="@+id/tv_chat_name"
+        android:layout_width="144dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="@dimen/_7dp"
+        android:layout_marginBottom="@dimen/_25dp"
+        android:text="@string/name"
+        android:textColor="#2D303E"
+        android:textSize="@dimen/_16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background_img"
+        app:layout_constraintStart_toEndOf="@+id/tv_background_img"
+        app:layout_constraintTop_toTopOf="@+id/tv_background_img" />
 
-</RelativeLayout>
+    <TextView
+        android:id="@+id/tv_chat_message"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:text="@string/message"
+        android:textColor="#2D303E"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_background_img"
+        app:layout_constraintStart_toStartOf="@+id/tv_chat_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chat_name" />
+
+    <ImageView
+        android:id="@+id/iv_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_background_img"
+        app:layout_constraintTop_toBottomOf="@+id/tv_chat_message"
+        app:srcCompat="@drawable/line" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="108dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="52dp"
+        android:text="@string/time"
+        android:textSize="@dimen/_14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_chat_name"
+        app:layout_constraintStart_toEndOf="@+id/tv_chat_name"
+        app:layout_constraintTop_toTopOf="@+id/tv_chat_name"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
