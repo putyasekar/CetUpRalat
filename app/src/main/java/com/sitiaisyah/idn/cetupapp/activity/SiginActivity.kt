@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.widget.Toolbar
 import com.google.firebase.auth.FirebaseAuth
-import com.sitiaisyah.idn.cetupapp.MainActivity
 import com.sitiaisyah.idn.cetupapp.R
 import kotlinx.android.synthetic.main.activity_sigin.*
 

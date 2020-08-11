@@ -1,4 +1,4 @@
-package com.sitiaisyah.idn.cetupapp
+package com.sitiaisyah.idn.cetupapp.activity
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -14,7 +14,7 @@ import com.google.android.material.tabs.TabLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 import com.google.firebase.database.*
-import com.sitiaisyah.idn.cetupapp.activity.WelcomeActivity
+import com.sitiaisyah.idn.cetupapp.R
 import com.sitiaisyah.idn.cetupapp.fragment.CallFragment
 import com.sitiaisyah.idn.cetupapp.fragment.ChatFragment
 import com.sitiaisyah.idn.cetupapp.fragment.SettingFragment
@@ -40,7 +40,10 @@ class MainActivity : AppCompatActivity() {
         val tabLayout: TabLayout = findViewById(R.id.tab_layout)
         val viewPager: ViewPager = findViewById(R.id.view_pager)
 
-        val viewPagerAdapter = ViewPagerAdapter(supportFragmentManager)
+        val viewPagerAdapter =
+            ViewPagerAdapter(
+                supportFragmentManager
+            )
         viewPagerAdapter.addFragment(ChatFragment(), "chats")
         viewPagerAdapter.addFragment(CallFragment(), "search")
         viewPagerAdapter.addFragment(SettingFragment(), "setting")
