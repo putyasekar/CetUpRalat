@@ -43,4 +43,5 @@
     <dimen name="_19sp">19sp</dimen>
     <dimen name="_18dp">18dp</dimen>
     <dimen name="_14dp">14dp</dimen>
+    <dimen name="_55dp">55dp</dimen>
 </resources>
